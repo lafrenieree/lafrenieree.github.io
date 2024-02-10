@@ -24,11 +24,12 @@ body{
     color: white;
 }
 .header-logo{
+    min-width: 25%;
     max-width: 30%;
 }
 .content{
     color: white;
-    font-size: 1rem;
+    font-size: 0.9rem;
 }
 .content-title{
     font-weight: 400;
