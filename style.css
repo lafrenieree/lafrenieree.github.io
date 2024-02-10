@@ -137,9 +137,10 @@ p.contact-us{
 }
 @keyframes animate{
 0% {opacity: 0.0;}
-10% {opacity: 0.3;}
-20% {opacity: 0.7;}
-30% {opacity: 0.9;}
-40% {opacity: 1;}
+20% {opacity: 0.0;}
+30% {opacity: 0.2;}
+40% {opacity: 0.4;}
+60% {opacity: 0.8;}
+70% {opacity: 1;}
 100% {opacity: 1;}
 }
