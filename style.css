@@ -45,6 +45,7 @@ body{
     padding: 15px;
     color: black;
     max-width: 290px;
+    max-height: 580px;
     margin: 5px;
     border-radius: 10px;
     font-family: var(--open);
