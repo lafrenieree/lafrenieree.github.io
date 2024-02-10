@@ -40,6 +40,7 @@ body{
     justify-content: right;
     display: flex;
     margin: 10px;
+    max-height: 50vh;
 }
 .content-cardholder-card{
     padding: 15px;
