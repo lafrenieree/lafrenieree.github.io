@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+:root {
+	--mont: 'Montserrat', sans-serif;
+}
+
+
+* {
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body{
+	margin: 50px;
+	background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(145,145,145,1) 100%, rgba(255,255,255,1) 100%);
+	color: #333;
+  }
+  
+ header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 1em;
+ } 
+
+ #title {
+	font-family: var(--mont);
+	font-size: 3.5em;
+	position: relative;
+	color: grey;
+	animation: slide 10s infinite;
+	 }
+
+ .tq-logo img {
+	max-width: 25vw;
+	display: block;
+ }
+
+ nav ul a {
+	text-decoration: none;
+	color: white;
+ }
+
+ nav ul {
+	font-family: var(--mont);
+	text-align: right;
+	font-size: 1em;
+} 
+ .card-container {
+	display: flex;
+	justify-content: right;
+	flex-wrap: wrap;
+	padding: 50px;
+ }
+
+.card {
+    width: 300px; /* Set card width */
+    height: 300px; /* Set card height */
+	margin: 10px;
+    border-radius: 10px; /* Slightly rounded corners for aesthetics */
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Simple shadow for depth */
+	color: black;
+	font-family: var(--mont);
+	transform: translateY(50px);
+	opacity: 0;
+	transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+	background: rgb(164,223,253);
+	background: linear-gradient(180deg, rgba(164,223,253,1) 0%, rgba(94,115,172,1) 100%);
+}
+
+ .card:nth-child(1) { transition-delay: 0s; }
+ .card:nth-child(2) { transition-delay: 0.1s; }
+ .card:nth-child(3) { transition-delay: 0.2s; }
+
+div.card h2 {
+	text-align: center;
+	padding-bottom: 30px;
+	font-size: 1.5em;
+	padding-top: 20px;
+}
+
+div.card ul {
+	font-size: 1.2em;
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-bottom: 40px;
+}
+
+#dti-no {
+	font-weight: bold;
+	color: rgb(164,223,253);
+}
+
+ @media (max-width: 900px) { /* Adjust the pixel value to suit your design */
+ 	body {
+		margin: 10px;
+	}
+
+	.card-container {
+		 flex-direction: column;
+         align-items: center;
+     }
+	 header{
+		flex-direction: column;	
+		justify-content: left;
+	 }
+
+	div.card h2 {
+		text-align: center;
+		font-size: 1.2em;
+		padding-bottom: 10px;
+	}
+
+	div.card ul {
+		font-size: 1em;
+		}
+
+ nav ul {
+ 	padding-top: 50px;
+	font-family: var(--mont);
+	text-align: right;
+	font-size: 0.8em;
+	} 
+
+.card {
+   	 width: 280px; /* Set card width */
+   	 height: 200px; /* Set card height */
+	 }
+
+ #title {
+	font-family: var(--mont);
+	font-size: 1.7em;
+	animation: none;
+	 }
+ }
+
+
+@keyframes slide {
+	0% {
+		left: 0;
+	}
+	100% {
+		left: 70px;
+	}
+}
