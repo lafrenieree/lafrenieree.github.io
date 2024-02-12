@@ -31,7 +31,7 @@ body{
 	 }
 
  .tq-logo img {
-	max-width: 25vw;
+	width: clamp(350px,30%,40vw);
 	display: block;
  }
 
@@ -131,6 +131,12 @@ div.card ul {
 	font-size: 1.7em;
 	animation: none;
 	 }
+
+ .tq-logo img {
+	width: clamp(250px,30%,50vw);
+	display: relative;
+	 }
+
  }
 
 
